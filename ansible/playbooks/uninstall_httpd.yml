@@ -9,9 +9,8 @@
        name: httpd
        state: stopped 
 
-    
- - name: uninstall httpd 
-   yum:
-    name: httpd
-    state: absent 
+  - name: uninstall httpd 
+    yum:
+      name: httpd
+      state: absent 
     
