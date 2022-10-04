@@ -6,6 +6,6 @@
     debug:
       msg: "An item: {{ item }}"
     with_items:
-      - ubuntu
+      - Samba
       - RHEL
       - Fedora
