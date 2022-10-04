@@ -1,0 +1,17 @@
+---
+- hosts: web 
+  become: yes
+  become_method: sudo 
+  tasks: 
+
+  - name: stop httpd service
+    service: 
+       name: httpd
+       state: stopped 
+
+    
+ - name: uninstall httpd 
+   yum:
+    name: httpd
+    state: absent 
+    
