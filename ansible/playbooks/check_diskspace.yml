@@ -10,4 +10,4 @@
 
   - name: Display result
     debug: 
-      msg: "{{result.stout_lines}}"
+      msg: "{{result.stdout_lines}}"
