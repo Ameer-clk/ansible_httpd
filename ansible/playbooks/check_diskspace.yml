@@ -3,7 +3,7 @@
   hosts: web 
   tasks: 
   - name: check_disk 
-    ansible_buildin.lines: 
+    ansible_builtin.shell: 
       cmd: df -h 
     register:  result 
 
