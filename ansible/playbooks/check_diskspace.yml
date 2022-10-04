@@ -2,10 +2,9 @@
 - name: check disk space
   hosts: web
   tasks:
-
   - name: check_disk
     ansible.builtin.shell:
-    cmd: df -h
+      cmd: df -h
     register: result
 
 
