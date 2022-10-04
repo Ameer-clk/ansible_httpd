@@ -1,5 +1,5 @@
 ---
-- name: web 
+- hosts: web 
   become: yes 
   become_method: sudo 
   tasks: 
