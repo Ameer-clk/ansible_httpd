@@ -2,10 +2,10 @@
 - hosts: web
   tasks:
 
-  - name: "loop through list"
+  - name: "new file to list"
     debug:
-      msg: "An item: {{ item }}"
+      msg: "My item: {{ item }}"
     with_items:
       - Samba
-      - RHEL
-      - Fedora
+      - Postfix
+      - Nfs
