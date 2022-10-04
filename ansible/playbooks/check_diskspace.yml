@@ -4,12 +4,11 @@
   tasks:
 
   - name: check_disk
-    ansible.buildin.shell:
+    ansible.builtin.shell:
     cmd: df -h
     register: result
 
 
   - name: Display result
-    service:
-      debug:
-       msg: "{{ result.stout_lines}}"
+    debug: 
+      msg: "{{result.stout_lines}}"
