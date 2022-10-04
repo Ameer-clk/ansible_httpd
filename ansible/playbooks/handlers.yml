@@ -1,0 +1,19 @@
+---
+- name: web 
+  become: yes 
+  become_method: sudo 
+  tasks:
+
+  - name: Install httpd 
+    yum: 
+     name: httpd 
+     state: latest 
+     update_cache: yes
+  notify: satrt httpd
+
+handlers: 
+
+   - name: start httpd 
+     service: 
+       name: httpd 
+       state: started 
