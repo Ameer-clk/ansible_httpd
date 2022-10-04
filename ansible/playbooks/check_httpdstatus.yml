@@ -1,10 +1,10 @@
 ---
-- name: check disk space
+- name: check httpd status
   hosts: web
   tasks:
-  - name: check_disk
+  - name: check_httpd
     ansible.builtin.shell:
-      cmd: df -h
+      cmd: systemctl status httpd
     register: result
 
 
